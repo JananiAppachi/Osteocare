@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OsteoCare</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="OsteoCare Logo">
+            </div>
+            <h1 class="site-name">OSTEOCARE</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/recommendations">Recommendations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- About Osteoporosis Section -->
+    <section class="info-section">
+        <h1>What is Osteoporosis?</h1>
+        <div class="info-card">
+            <img src="{{ url_for('static', filename='images/osteoporosis-info.jpg') }}" alt="Osteoporosis Explanation">
+            <p>Osteoporosis is a condition that weakens bones, making them fragile and more likely to break...</p>
+        </div>
+        
+        <h2>Why Does It Occur?</h2>
+        <div class="info-card">
+            <img src="{{ url_for('static', filename='images/bone-loss.jpg') }}" alt="Why Osteoporosis Occurs">
+            <p>Osteoporosis occurs due to loss of bone density over time...</p>
+        </div>
+        
+        <h2>Causes of Osteoporosis</h2>
+        <div class="info-card">
+            <img src="{{ url_for('static', filename='images/osteoporosis-causes.jpg') }}" alt="Causes of Osteoporosis">
+            <p>Poor diet, lack of calcium, aging, hormonal changes...</p>
+        </div>
+        
+        <h2>Effects of Osteoporosis</h2>
+        <div class="info-card">
+            <img src="{{ url_for('static', filename='images/osteoporosis-effects.jpg') }}" alt="Effects of Osteoporosis">
+            <p>Increased risk of fractures, back pain, posture problems...</p>
+        </div>
+    </section>
+</body>
+</html>

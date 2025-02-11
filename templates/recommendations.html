@@ -1,0 +1,57 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OsteoCare</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="OsteoCare Logo">
+            </div>
+            <h1 class="site-name">OSTEOCARE</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/recommendations">Recommendations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Recommendations Section -->
+    <section class="recommendations-section">
+        <h1>How to Prevent & Manage Osteoporosis</h1>
+        
+        <h2>Causes & Effects</h2>
+        <div class="info-card">
+            <img src="{{ url_for('static', filename='images/cause-effect.jpg') }}" alt="Causes and Effects">
+            <p>Understand the main causes and effects of osteoporosis...</p>
+        </div>
+        
+        <h2>Do’s & Don’ts</h2>
+        <div class="info-card">
+            <img src="{{ url_for('static', filename='images/dos-donts.jpg') }}" alt="Do's and Don'ts">
+            <p>Follow a healthy diet, exercise regularly, avoid smoking...</p>
+        </div>
+        
+        <h2>How to Prevent Osteoporosis?</h2>
+        <div class="info-card">
+            <img src="{{ url_for('static', filename='images/prevent-osteoporosis.jpg') }}" alt="Prevention Tips">
+            <p>Eat calcium-rich foods, engage in weight-bearing exercises...</p>
+        </div>
+        
+        <h2>What to Do If Diagnosed?</h2>
+        <div class="info-card">
+            <img src="{{ url_for('static', filename='images/treatment.jpg') }}" alt="Osteoporosis Treatment">
+            <p>Consult a doctor, take prescribed medication, focus on bone-strengthening activities...</p>
+        </div>
+    </section>
+</body>
+</html>

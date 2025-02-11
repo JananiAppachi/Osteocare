@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OsteoCare</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="OsteoCare Logo">
+            </div>
+            <h1 class="site-name">OSTEOCARE</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/recommendations">Recommendations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="slider">
+        <div class="slider-container">
+            <div class="slides">
+                <img src="{{ url_for('static', filename='images/image1.jpg') }}" class="slide" alt="Bone Health">
+                <img src="{{ url_for('static', filename='images/image2.jpg') }}" class="slide" alt="Osteoporosis Awareness">
+                <img src="{{ url_for('static', filename='images/image3.jpg') }}" class="slide" alt="Healthy Bones">
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="upload">
+        <div class="upload-container">
+            <h2>Eager to know your bone status?</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" id="xrayUpload" name="file" accept="image/*">
+                <button type="button" onclick="uploadImage()">Upload & Predict</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <section id="result">
+        <div class="result-container">
+            <h3>Uploaded X-ray:</h3>
+            <img id="uploadedImage" src="" alt="Uploaded X-ray will appear here">
+            <h3>Prediction Result:</h3>
+            <p id="prediction">Your result will be displayed here.</p>
+        </div>
+    </section>
+
+    <section id="info-cards">
+        <div class="card">Osteoporosis affects millions of people worldwide.</div>
+        <div class="card">Calcium and vitamin D are essential for bone health.</div>
+        <div class="card">Regular exercise helps maintain bone strength.</div>
+    </section>
+
+    <footer>
+        <p>© 2025 OsteoCare. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
